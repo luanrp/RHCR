@@ -11,3 +11,14 @@ cmake*
 idea.pptx
 ~*
 maps
+
+# Java compiled files
+*.class
+*.jar
+*.war
+*.ear
+.classpath
+.project
+.settings/
+target/
+bin/
