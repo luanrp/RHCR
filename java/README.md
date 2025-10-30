@@ -142,9 +142,25 @@ cd java/src/main/java
 javac com/rhcr/algorithm/*.java
 ```
 
-### 使用Maven构建（可选）
+### 使用Maven构建（推荐）
 
-如果需要使用Maven进行项目管理，可以创建对应的pom.xml文件。
+项目提供了Maven配置文件（pom.xml），可以使用Maven进行构建：
+
+```bash
+cd java
+
+# 编译
+mvn clean compile
+
+# 运行示例
+mvn exec:java -Dexec.mainClass="com.rhcr.algorithm.Example"
+
+# 打包成JAR
+mvn package
+
+# 运行打包后的JAR
+java -jar target/rhcr-java-1.0.0.jar
+```
 
 ## 代码规范
 
